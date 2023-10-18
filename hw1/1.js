@@ -13,6 +13,6 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
-const tempCel = prompt("Введите температуру", 0)
-const tempFar = (9 / 5) * tempCel + 32
-console.log(`Цельсий: ${tempCel}, Фаренгейт: ${tempFar}`)
+const tempCel = +prompt("Введите температуру", 0);
+const tempFar = +(9 / 5) * tempCel + 32;
+alert(`Цельсий: ${tempCel.toFixed(2)}, Фаренгейт: ${tempFar.toFixed(2)}`);
